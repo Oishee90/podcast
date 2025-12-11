@@ -76,8 +76,8 @@ export default function DownloadButtons({ src }) {
         disabled={!!isProcessing}
         className={`flex-1 py-3 rounded-lg font-medium text-white transition ${
           isProcessing === "mp3"
-            ? "bg-green-700 cursor-wait"
-            : "bg-green-600 hover:bg-green-700"
+            ? "bg-[#76D8FF] cursor-wait"
+            : "bg-[#3191B7] hover:bg-[#227da1]"
         } disabled:opacity-50`}
       >
         {isProcessing === "mp3" ? "Creating MP3..." : "Download MP3"}
@@ -86,10 +86,10 @@ export default function DownloadButtons({ src }) {
       <button
         onClick={() => convertAndDownload("wav")}
         disabled={!!isProcessing}
-        className={`flex-1 py-3 rounded-lg font-medium text-white transition ${
+        className={`flex-1 py-3 roboto  rounded-lg font-bold text-black transition ${
           isProcessing === "wav"
-            ? "bg-purple-700 cursor-wait"
-            : "bg-purple-600 hover:bg-purple-700"
+            ? "bg-[#e6cfcf]cursor-wait"
+            : "bg-[#FFFFFF] hover:bg-[#FFFFFF]"
         } disabled:opacity-50`}
       >
         {isProcessing === "wav" ? "Creating WAV..." : "Download WAV"}

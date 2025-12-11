@@ -19,14 +19,14 @@ export default function LoadingBars({ progress, status, onComplete }) {
       ? "text-green-600"
       : status === "pending"
       ? "text-yellow-600"
-      : "text-blue-600";
+      : "text-[#439CBF]";
 
   const barColor =
     status === "complete"
       ? "bg-green-500"
       : status === "pending"
       ? "bg-yellow-500"
-      : "bg-blue-500";
+      : "bg-[#439CBF]";
 
   // Show "Done!" for 2 sec after complete, then call onComplete
   useEffect(() => {

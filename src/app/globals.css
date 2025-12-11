@@ -9,3 +9,32 @@
   font-family: "Neuton", serif;
  
 }
+/* Audio Player Background */
+.custom-audio-player {
+
+  border-radius: 8px;
+  padding: 6px;
+}
+
+/* Chrome / Edge play button color */
+.custom-audio-player::-webkit-media-controls-panel {
+  background-color: #5C5C5C !important;
+}
+
+/* Play Button */
+.custom-audio-player::-webkit-media-controls-play-button {
+  background-color: #14b8eb !important;
+  border-radius: 50%;
+}
+
+/* Play button hover */
+.custom-audio-player::-webkit-media-controls-play-button:hover {
+  background-color: #0ea5c6 !important;
+}
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}

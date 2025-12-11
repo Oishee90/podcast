@@ -32,23 +32,21 @@ export default function FileUpload({ onUpload, resetAll }) {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full roboto">
       {!fileName ? (
         <label
           onDrop={handleDrop}
           onDragOver={(e) => e.preventDefault()}
           className="
             cursor-pointer flex flex-col items-center justify-center
-            border-2 border-dashed border-gray-300 
+            border-2 border-dashed border-[#d6f3ffe1]
             rounded-xl p-12 w-full
-            transition hover:border-blue-500 bg-white
+            transition hover:border-[#76D8FF] bg-transparent
           "
         >
           <FiUpload className="text-5xl text-gray-400 mb-4" />
 
-          <p className="text-lg font-semibold text-gray-700">
-            Select Audio File
-          </p>
+          <p className="text-lg font-semibold text-white">Select Audio File</p>
 
           <p className="text-gray-500 text-sm mt-1">
             Drag and drop or click to browse
@@ -67,8 +65,8 @@ export default function FileUpload({ onUpload, resetAll }) {
           />
         </label>
       ) : (
-        <div className="flex items-center justify-between bg-gray-100 p-4 rounded-xl border border-gray-300">
-          <p className="text-gray-700 font-medium truncate max-w-[70%]">
+        <div className="flex items-center justify-between bg-transparent p-4 rounded-xl border border-[#9fe0fa33]">
+          <p className="text-white font-medium truncate max-w-[70%]">
             {fileName}
           </p>
 

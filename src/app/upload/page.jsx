@@ -4,7 +4,7 @@ import React, { Suspense } from "react";
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-black">
       <Suspense fallback={<div>Loading...</div>}>
 
         <Upload></Upload>

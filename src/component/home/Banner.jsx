@@ -10,13 +10,13 @@ import { PiWaveform } from "react-icons/pi";
 import Link from "next/link";
 export default function Banner() {
   return (
-    <div className="relative w-full overflow-hidden min-h-screen">
+    <div className="relative w-full overflow-hidden min-h-screen ">
       <Image
         src={bannerImage}
         alt="Banner"
         layout="fill"
         objectFit="cover"
-        className="absolute inset-0 w-full h-full object-cover opacity-70"
+        className="absolute inset-0 w-full h-full"
       />
       <Navbar></Navbar>
       {/* LightRays Effect */}
