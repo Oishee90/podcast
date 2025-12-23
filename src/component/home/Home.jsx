@@ -3,19 +3,9 @@ import React, { useState, useEffect } from "react";
 import Banner from "./Banner";
 
 const Home = () => {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-   
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return <p>Loading...</p>;
-  }
-
+ 
   return (
-    <div>
+    <div className="bg-black">
       <Banner />
     </div>
   );

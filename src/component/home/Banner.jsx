@@ -10,7 +10,7 @@ import { PiWaveform } from "react-icons/pi";
 import Link from "next/link";
 export default function Banner() {
   return (
-    <div className="relative w-full overflow-hidden min-h-screen ">
+    <div className="relative w-full overflow-hidden min-h-screen bg-black ">
       <Image
         src={bannerImage}
         alt="Banner"
@@ -21,7 +21,7 @@ export default function Banner() {
       <Navbar></Navbar>
       {/* LightRays Effect */}
       <div className="absolute inset-0">
-        <LightRays
+        {/* <LightRays
           raysOrigin="right"
           raysColor="#00ffff"
           raysSpeed={1.5}
@@ -32,7 +32,7 @@ export default function Banner() {
           noiseAmount={0.1}
           distortion={0.05}
           className="custom-rays"
-        />
+        /> */}
       </div>
 
       {/* Dark overlay */}

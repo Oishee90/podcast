@@ -86,10 +86,10 @@ export default function DownloadButtons({ src }) {
       <button
         onClick={() => convertAndDownload("wav")}
         disabled={!!isProcessing}
-        className={`flex-1 py-3 roboto  rounded-lg font-bold text-black transition ${
+        className={`flex-1 py-3 roboto  rounded-lg font-bold  transition ${
           isProcessing === "wav"
-            ? "bg-[#e6cfcf]cursor-wait"
-            : "bg-[#FFFFFF] hover:bg-[#FFFFFF]"
+            ? "bg-[#e6cfcf]cursor-wait text-white"
+            : "bg-[#FFFFFF] hover:bg-[#FFFFFF] text-black"
         } disabled:opacity-50`}
       >
         {isProcessing === "wav" ? "Creating WAV..." : "Download WAV"}

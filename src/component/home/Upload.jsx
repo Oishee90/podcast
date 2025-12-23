@@ -108,7 +108,7 @@ const Upload = () => {
     };
   }, []);
   return (
-    <div className="min-h-screen  flex items-center justify-center p-4 relative roboto">
+    <div className="min-h-screen  flex items-center justify-center p-4 relative roboto bg-black">
       <Toaster position="top-center" />
       {/* Background microphone image with overlay */}
       <div className="absolute inset-0 overflow-hidden">
